@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> Javascript-arrays</title>
+	
+	
+</head>
+
+
+<body>
+    <button id="textchange"> haha</button>
+    
+	<script type="text/javascript">
+		var array= new Array();
+        array[0]="A B";
+        array[1]="c d";
+        
+        console.log(array);
+        
+        var tweets=["wah ","ji ","wah"];
+        tweets.push("kya battan ne");  //it will add new content
+        tweets.splice(1,1);         //it will delete the array[1],number of items would be 1 
+        
+         tweets.splice(1,0,"add stuff again"); //it will add text without removing
+        tweets.splice(1,1,"replaced");          //it will replace
+        
+         console.log(tweets);
+    
+    </script> 
+</body>
+</html>

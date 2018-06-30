@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title> Javascript</title>
+	<style type="text/css">
+        .circle{
+            float: left;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            
+        }
+        #orange{
+            background-color: orange;
+        }
+        #white{
+            background-color: whitesmoke;
+        }
+        #green{
+            background-color: green;
+        }
+    </style>
+	
+</head>
+
+
+<body>
+
+
+	<p id="orange" class="circle"></p>
+    
+    <p id="white" class="circle"></p>
+    
+    <p id="green" class="circle"></p>
+    
+   
+   
+	<script type="text/javascript">
+		document.getElementById("orange").onclick=function(){
+           // alert("button clicked");
+            document.getElementById("orange").style.display="none";
+            
+        }
+        document.getElementById("white").onclick=function(){
+           // alert("button clicked");
+            document.getElementById("white").style.display="none";
+            
+        }
+        document.getElementById("green").onclick=function(){
+           // alert("button clicked");
+            document.getElementById("green").style.display="none";
+            
+        }
+        
+        
+
+	</script> 
+</body>
+</html>

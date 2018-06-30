@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title> Javascript-variable</title>
+	
+	
+</head>
+
+
+<body>
+    <input id="textinput" type="text" > 
+	<button id="textchange">changeText</button>
+    
+	<p id="text">Hello Gurender!!</p>
+    
+	<script type="text/javascript">
+		document.getElementById("textchange").onclick=function(){
+            //alert("boooo");
+            //this will change the hello gurender -> whatever user types in input box
+            var data="";
+            data=document.getElementById("textinput").value;
+            //alert(data);
+            document.getElementById("text").innerHTML=data;        
+        }
+    
+    </script> 
+</body>
+</html>

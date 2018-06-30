@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title> Javascript</title>
+	
+	
+</head>
+
+
+<body>
+
+
+	<p id="text">Accessing..</p>
+    <button id="buttonId">change text</button>
+    
+    <p id = "2ndparagraph">Javascript is.....</p>
+    <button id="buttonId2">change/add text</button>
+    
+    <p id = "3ndparagraph"></p>
+    <button id="buttonId3">add text</button>
+    
+    <hr>
+     <p id = "4ndparagraph">Color/Style/Display change, ".style.display="none"" </p>
+    <button id="buttonId4">Color/Style/Display</button>
+	<script type="text/javascript">
+		document.getElementById("buttonId").onclick=function(){
+            alert("button clicked");
+            document.getElementById("text").innerHTML="changed ....lol!!";
+            
+        }
+        
+        document.getElementById("buttonId2").onclick=function(){
+            //alert("button clicked");
+            document.getElementById("2ndparagraph").innerHTML="I think "+document.getElementById("2ndparagraph").innerHTML+"changed and added again ....lol!!";
+            
+        }
+        document.getElementById("buttonId3").onclick=function(){
+         //   alert("button clicked");
+            document.getElementById("3ndparagraph").innerHTML="just adddddddd ....lol!!";
+            
+        }
+        document.getElementById("buttonId4").onclick=function(){
+            
+            document.getElementById("4ndparagraph").style.color="blue";
+            document.getElementById("4ndparagraph").style.fontSize="25px";
+        }
+
+	</script> 
+</body>
+</html>

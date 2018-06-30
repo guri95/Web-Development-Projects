@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title> Javascript-arrays</title>
+	
+	
+</head>
+
+
+<body>
+   
+
+    <div id="divId"></div>
+    <hr>
+   
+    <p><strong>How many fingure am I holding up?</strong>
+    <select id ="number"> 
+         <option>0</option>
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+    
+    
+    </select> 
+    <button id="buttonId">check!</button></p>
+    
+
+	<script type="text/javascript">
+        
+		var tweets=["hi "," how's going ","have good day!!"]
+        var data="";
+        for(var i=0;i<tweets.length;i++){
+            
+            data=data+ "<p>"+tweets[i]+"</p>";
+        }
+        
+        document.getElementById("divId").innerHTML=data;
+        
+        //game using while loop
+        document.getElementById("buttonId").onclick=function(){
+        var  temp=false;
+        var i=0;
+            while(!temp){
+
+                var data=document.getElementById("number").value;
+                var data1= Math.floor(Math.random()*6);
+               // alert(data);
+                 //alert(data1);
+                if(data ==data1){
+
+                    temp=true;
+                    alert("you got it "+data+", you used "+i+" guesses.")
+                }else{
+                    temp=false;
+                    i++;
+                }
+
+            }
+        
+        }
+    </script> 
+</body>
+</html>

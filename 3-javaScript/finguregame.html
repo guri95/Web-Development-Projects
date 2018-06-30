@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title> Javascript-arrays</title>
+	
+	
+</head>
+
+
+<body>
+   
+    <p>how many fingure am I holding up?</p>
+    <input type="text" id="inputId">
+    <button id="buttonId">check!</button>
+	<script type="text/javascript">
+		document.getElementById("buttonId").onclick=function(){
+          
+            var data = document.getElementById("inputId").value;
+          //  alert(document.getElementById("inputId").value);
+             
+            var check=Math.floor(Math.random()*6);
+           // alert(check);
+            
+            if(check==data){
+                alert("Well done, You got it "+check);
+                
+            }else{
+                alert("Nope, you suck, the number was "+check);
+            }
+
+        }
+        
+    </script> 
+</body>
+</html>

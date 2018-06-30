@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title> Css2</title>
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	
+	<style type="text/css">
+		.fontfamily{
+			font-family:Shadows Into Light;
+			
+		
+		}
+		.bold{
+			font-weight:bold;
+		}
+		.italic{
+			font-style:italic;
+		}
+		.underline{
+			text-decoration:underline;
+		
+		}
+		a{
+			text-decoration:none;
+		}
+		a:visited{
+			color:green;
+		}
+		a:hover{
+			text-decoration: underline;
+			color:hotpink;
+		}
+		a:active {
+			color: blue;
+		}
+		.big{
+			font-size:200%;
+		}
+		div{
+			
+			background: #D0ECE7;
+			width:400px;
+		}
+		.right{
+			text-align:right;
+		}
+		.center{
+			text-align:center;
+		}
+		.justify{
+			text-align:justify;
+		}
+		
+	</style>	
+</head>
+
+
+<body>
+	<h1 class="fontfamily">Using "font family"</h1>
+	<p class="fontfamily">"Fonts" will be change. You can also search <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">web safe font</a></p>
+	<p class="fontfamily">We can also use GOogle Font by searching <a href="https://fonts.google.com/?query=sha">Google Font</a> then we add the 
+	shadow font link from google into our html head and add the name of th efont to font-family!</p>
+	<hr>
+	<h1 class="fontfamily">Using "Span"</h1>
+	<p class ="bold italic">This id if you want to add tags like "strong" to multiple
+	lilnes or positions then we use classes. let's change it into italic and bold</p>
+	<p class="italic"> Some more text<span class ="bold"> just to check italic and "span"  </span>class works!</p>
+	<p class="big">Underline link with disfferent color</p>
+	<p>If I don't want my "links" to underline then i'll use "a" class
+	 by setting its <span class="fontfamily">"text-decoration: none; "</span> <span class="underline">but if we move cursor on link the underline will 
+	 show up cause we used "a:hover"</span>
+	 <br> <a href="https://www.google.com">this link is not underlines sml in these days</a></p>
+	
+	<p>More info about Css Text Style</p>
+	<a href="https://www.w3schools.com/css/css_text.asp">click here</a>
+	
+	<hr>
+	<div>
+		<p class ="right"> some more text, text-align:right or center etc.</p>
+		<p class="center">This is in centered</p>
+		<p class="justify">The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems.
+		If the browser does not support the first font, 
+		it tries the next font.</p>
+	</div>
+	<hr>
+	<div>
+		<h1 class="fontfamily">Styling Link</h1>
+		<a href="https://www.w3schools.com/css/css_link.asp" target="_blank">Styling Link in new web-page</a>
+		<p>For more information about "Pseudo-classes" you can always click below: <p>
+		<a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">click here!!</a>
+	</div>
+	 </body>
+</html>
